@@ -33,9 +33,10 @@ else:
     reddit.validate_on_submit = True
 
     sub_r = 'NJGuns'
+    flair = "e3dbdb9a-e71e-11ea-8d82-0ed5099f481f"
 
     subreddit = reddit.subreddit(sub_r)
 
-    subreddit.submit(post_title, selftext=post_body)
+    subreddit.submit(post_title, selftext=post_body, flair_id=flair)
 
 print("Done.")
